@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+body {
+  @apply text-lg font-mono w-full h-full bg-[#eceff4] text-[#434c5e] dark:bg-[#3b4252] dark:text-[#88c0d0] flex flex-col items-center justify-center;
+}
+
+#root {
+  @apply w-[95%] md:w-[70%] lg:w-[40%] h-full items-center;
+}
+
+div {
+  @apply mb-6;
+}
+
+.title {
+  @apply text-3xl font-bold;
+}
+
+.title::before {
+  @apply content-none m-0;
+}
+
+h1 {
+  @apply text-2xl font-bold my-2;
+}
+
+h1::before {
+  @apply content-['#'] mr-3;
+}
+
+ul {
+  @apply flex flex-col gap-y-4 pl-8 mb-3;
+}
+
+strong {
+  @apply text-[#b48ead];
+}
+
+a {
+  @apply underline decoration-dashed hover:text-[#b48ead] transition-colors;
+}
